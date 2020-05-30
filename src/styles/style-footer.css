@@ -1,0 +1,20 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+footer {    
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(32, 148, 226);
+    color: white;  
+    padding: 10px;
+    border-top: 1px;
+    border-top-style: solid;
+    border-top-color: rgba(200, 200, 200, 0.5);        
+}
+
+footer p {
+    text-align: center;
+}

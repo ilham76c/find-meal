@@ -1,0 +1,51 @@
+body {
+    margin: 0;        
+}
+#content {
+    padding: 0 50px;
+    margin-bottom: 75px;
+}
+#content h1 {
+    text-align: center;
+}
+
+meal-list {
+    display: flex;
+    flex-direction: column;    
+}
+/* .flex-row {
+    display: flex;    
+    flex-grow: 1;    
+}
+.meal {    
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 20px;    
+    align-items: center;      
+    border: 2px solid rgba(50, 150, 140, 0.8);    
+    justify-content: space-between;
+}
+.meal img {           
+    height: 230px;   
+}
+.meal-description {    
+    text-align: justify;    
+    overflow: hidden;    
+    margin: 0 40px;
+}
+.meal-description p {    
+    margin: 0;        
+}
+.meal-description h3 {    
+    margin: 0 0 20px 0;
+}
+
+.wrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8; 
+    -webkit-box-orient: vertical;
+    margin-top: 10px;
+} */
