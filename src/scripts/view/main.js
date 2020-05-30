@@ -14,7 +14,7 @@ function main() {
     };
     const onButtonIndexClicked = () => {        
         console.log('index clicked');                
-        window.location.href = "index.html";
+        window.location.href = "index.html";        
     };
     const onButtonSearchClicked = () => {            
         DataSource.searchMeal(searchElement.value)
@@ -56,10 +56,12 @@ function main() {
         if (window.location.hash === '#category') {
             categoryElement = document.querySelector("categories-list");
             category();
+            navMenuElement.changeStyle('#btn_categories');
         } else {
             searchElement = document.querySelector("search-nav");            
             mealListElement = document.querySelector("meal-list");
             searchElement.clickEvent = onButtonSearchClicked;
+            navMenuElement.changeStyle('#btn_index');
             defaultMeal();
         }        
     
