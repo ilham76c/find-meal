@@ -2,12 +2,12 @@ import '../components/meal-list.js';
 import '../components/search-nav.js';
 import '../components/nav-menu.js';
 import '../components/categories-list.js';
+// import barImage from '../../../assets/img/bar-img.png';
 import DataSource from '../data/data-source.js';
 
 function main() {    
-    var categoryElement; var navMenuElement;
-    var searchElement; var navMenuElement;
-    var mealListElement;
+    let categoryElement; let navMenuElement; let searchElement; let mealListElement;
+    
     const onButtonCategoriesClicked = () => {        
         console.log('categories clicked');
         window.location.href = "categories.html#category";                
@@ -50,7 +50,7 @@ function main() {
 
     
     document.addEventListener("DOMContentLoaded", () => {
-        
+        // document.querySelector("#img-bar").src = barImage;
         navMenuElement = document.querySelector("nav-menu");
         navMenuElement.clickEvent = [onButtonIndexClicked,onButtonCategoriesClicked];    
         if (window.location.hash === '#category') {

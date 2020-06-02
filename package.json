@@ -10,6 +10,7 @@
   "author": "ilham76c",
   "license": "ISC",
   "devDependencies": {
+    "copy-webpack-plugin": "^6.0.1",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",

@@ -28,7 +28,18 @@ module.exports = {
                     // Disables attributes processing
                     attributes: false,
                 },                                  
-            }          
+            },
+            {
+                test: /\.(png|jpg|gif)$/i,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: false,
+                        }
+                    }
+                ]
+            }     
         ]
     },
     // plugin
@@ -41,6 +52,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/categories.html",
             filename: "categories.html"
-        }),
+        }),        
     ]
 }
